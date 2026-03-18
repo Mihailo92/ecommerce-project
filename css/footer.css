@@ -1,0 +1,102 @@
+/*FOOTER*/
+footer{
+	background-color: #faf8f8;
+	width: 1300px;
+	height: 400px;
+	
+	margin: 0 auto;   /* ✅ CENTRIRANJE */
+	
+}
+
+.sekcijaFooter{
+	display: flex;
+	gap: 180px;
+}
+
+.sekcijaFooter ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.sekcijaShop{
+	display: inline-block;
+	margin-left: 200px;
+}
+
+.sekcijaInformation{
+	display: inline-block;
+}
+
+.sekcijaCustomerSupport{
+	display: inline-block;
+}
+
+
+.sekcijaSocialneMrezeIcons img{
+	width: 50px;
+	height: 50px;
+	margin-left: 30px;
+}
+
+.footer-bottom{
+	display: flex;
+	justify-content: space-between;
+	margin: 0 200px;
+	margin-top: 10px;
+}
+
+@media screen and (max-width: 768px){
+	footer{
+		height: 700px;
+		
+	}
+	
+	.sekcijaFooter{
+		padding: 0;
+		margin: 0;
+		gap: 100px;
+	}
+	
+	
+}
+
+@media screen and (max-width: 425px){
+	
+	footer{
+		height: 2200px;
+		font-size: 2rem;
+		display: block;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	
+	.sekcijaFooter{
+		display: flex;
+		flex-direction: column;
+		align-items: center;   /* centriranje */
+		gap: 40px;
+	}
+	
+	.sekcijaShop{
+		display: block;
+		margin-left: 0px;
+	}
+	
+	.sekcijaInformation{
+		display: block;
+	}
+	
+	.sekcijaShop,
+.sekcijaInformation,
+.sekcijaCustomerSupport{
+	text-align: center;
+	font-size: 4rem;
+}
+	
+	.footer-bottom{
+		display: flex;
+		font-size: 2.3rem;
+		align-items: center;
+	}
+}

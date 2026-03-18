@@ -1,0 +1,671 @@
+/*MAIN*/
+		
+			
+			.sectionMain{
+				
+			}
+			
+			
+			
+			
+			.ikoniceSortiranje{
+			}
+			
+			.informacijeZaProdukt{
+				display: flex;
+			}
+			
+			.desnaInformacija{
+			}
+			
+			.srednjiMeni{
+				display: flex;
+				flex-wrap: wrap;   /* 👈 dozvoli novi red */
+			}
+			
+			
+			/*side filter*/
+			aside{
+				width: 200px;
+				height: auto;
+				
+				border: 1px solid black;
+				margin-left: 150px;
+				margin-top: 50px;
+				border-radius: 25px;
+			}
+			
+			
+			
+			
+			
+			.filterHeading{
+				padding-left: 10px;
+			}
+			
+			.checkbox-container{
+				display: flex;
+				align-items: center;
+				cursor: pointer;
+				gap: 8px;
+			}
+
+			/* sakrij pravi checkbox */
+			.checkbox-container input{
+				display: none;
+			}
+
+			/* kocka checkbox */
+			.checkmark{
+				width: 18px;
+				height: 18px;
+				border: 2px solid black;
+				display: inline-block;
+				
+				padding: 3px;                 /* 👈 beli prostor */
+				box-sizing: border-box;
+				background-clip: content-box; /* 👈 crna boja samo u sredini */
+			}
+
+			/* kad je čekirano → crno */
+			.checkbox-container input:checked + .checkmark{
+				background-color: black;
+			}
+			
+			.checkbox-container{
+				padding: 10px 10px 2px 20px;
+			}
+			
+			/*END kocka checkbox*/
+			
+			.filters{
+				padding-left: 10px;
+				
+			}
+			
+			
+	
+			
+			.filterDugme{
+			
+				display: block;      /* 👈 da bi margin auto radio */
+				margin: 150px auto;   /* 👈 centriranje */
+				color: white;
+				background-color: black;
+				padding: 10px;
+				border-radius: 10px;
+				width: 150px;
+				
+			}
+			
+		
+			
+			
+			/*kraj sidebar filtera*/
+			
+			.viewBox{
+				width: 850px;
+				min-height : 850px;
+				background-color: #faf8f8;
+				margin-left: 50px;
+				padding-bottom: 30px;
+				border-bottom: 1px solid gray;
+				display: flex;
+				flex-wrap: wrap; /* Omogućava novi red kada prostor nije dovoljan */
+				justify-content: space-between; /* Ravnomerno rasporedi proizvode */
+			}
+			
+			.product {
+				width: 22%;
+
+				margin: 1%;
+				height: 290px;
+
+				/*background-color: #e0e0e0;*/
+				background-color: white;
+				border: 1px solid #333;
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+				/*line-height: 150px;*/
+				box-sizing: border-box;	
+				padding: 10px;
+				
+
+				box-shadow: 5px 5px 5px 5px gray;	
+				
+				
+				
+			}
+			
+			
+			
+			
+			.product img{
+				width: 160px;
+				height: 180px;
+			}
+			
+			.product p{
+				padding: 0px;
+				margin: 2px;
+			}
+			
+			.naslovProduct{
+				display: flex;
+				justify-content: space-between;
+				width: 100%;
+			}
+			
+			.snizenjeProduct{
+				border: 1px solid red;
+				border-radius: 10px;
+				
+				
+			}
+			
+			.snizenjeProduct{
+				color: red;
+				padding: 2px;
+			}
+			
+			.cenaProduct{
+				display: flex;
+				
+				max-width: 100px;
+			}
+			
+			.addToCartBtn{
+					border-radius: 5px;
+					background-color: white;
+				}
+			
+			.paginacija{
+			    margin-top: 20px;
+				margin-left: 620px;
+				
+			}
+			
+			.paginacijaBroj{
+				padding: 5px;
+				background-color: #faf8f8;
+				border-color: gray;
+				margin-left: 10px;
+			}
+			
+			.dugmeBack{
+				padding: 0px 30px;
+				background-color: #faf8f8;
+				border-color: gray;
+			}
+			
+			.dugmeNext{
+				padding: 0px 30px;
+				background-color: #faf8f8;
+				border-color: gray;
+				margin-left: 10px;
+			}
+			
+			.reklama{
+				width: 100px;
+				height: 300px;
+				margin-top: 100px;
+				background-color: #e4d7cd;
+				display: block;
+				width: 1300px;
+				display: flex;
+				
+				
+			}
+			
+			.reklama h1{
+				text-align: left;
+				margin: 100px auto;
+				margin-left: 200px;
+			}
+			
+			.emailAndSubscribe{
+				display: block;
+				margin: 50px;
+				margin-top: 70px;
+			}
+			
+			.emailAndSubscribe input{
+				display: block;
+				width: 590px;
+				height: 60px;
+				
+				text-align: center; /* Centers both placeholder and typed text */
+				border-radius: 10px;
+				
+				background-color: white;
+
+			}
+			
+			.emailAndSubscribe button{
+				margin-top: 20px;
+				display: block;
+				width: 600px;
+				height: 60px;
+				
+				border-radius: 10px;
+				
+				background-color: black;
+				color: white;
+			}
+					
+			
+			
+			/*FILTERI*/
+			
+			.filters {
+			  width: 150px;
+			  font-family: Arial, sans-serif;
+			}
+
+			details {
+			  border-bottom: 1px solid #ddd;
+			  padding: 10px 0;
+			}
+
+			summary {
+			  list-style: none;
+			  cursor: pointer;
+			  font-weight: bold;
+			  display: flex;
+			  align-items: center;
+			}
+
+			/* Remove default arrow */
+			summary::-webkit-details-marker {
+			  display: none;
+			}
+
+			/* Custom arrow */
+			summary::after {
+			  content: ">";
+			  transition: transform 0.2s;
+			  display: inline-block;
+			  width: 16px;        /* 🔑 KLJUČ */
+			  text-align: center;
+			}
+
+			/* Change arrow when active */
+			details[open] summary::after {
+			  content: "⌄";
+			}
+
+			.filters ul {
+			  margin: 10px 0 0 0;
+			  padding: 0;
+			}
+
+			.filters li {
+			  list-style: none;
+			  cursor: pointer;
+			  padding-left: 30px;
+			}
+
+
+
+			/* kocka checkbox */
+
+			/* sakrij pravi checkbox */
+			.checkbox-container input{
+				display: none;
+			}
+
+			.checkmark{
+				width: 18px;
+				height: 18px;
+				border: 2px solid black;
+				display: inline-block;
+				
+				padding: 3px;                 /* 👈 beli prostor */
+				box-sizing: border-box;
+				background-clip: content-box; /* 👈 crna boja samo u sredini */
+			}
+
+			/* kad je čekirano → crno */
+			.checkbox-container input:checked + .checkmark{
+				background-color: black;
+			}
+
+			.checkbox-container{
+				padding: 0;
+			}
+
+			/*END kocka checkbox*/
+			
+			
+			.productViewBox{
+				
+				display: block;
+			}
+
+			.ikoniceSortiranjeBox{
+				margin-left: 60px;
+				display: flex;
+				width: 800px;
+			}
+
+			.informacijeZaProdukt{
+				display: flex;
+				justify-content: space-between;
+				width: 850px;
+				
+			}
+
+			.ikoniceSortiranje{
+				margin-left: 55px;   /* 👈 KLJUČ */
+				display: flex;
+				align-items: right;
+				gap: 10px;
+				width: 800px;
+			}
+
+			.ikoniceSortiranje img{
+				margin-left: auto; 
+				align-items: right;
+			}
+
+			@media screen and (max-width: 768px){
+
+				body{
+					
+					font-size: 2rem; 
+					display: flex;
+					flex-direction: column; /* 👈 jedan ispod drugog */
+					align-items: center;
+					margin: 0 auto;
+					padding: 0;
+				}
+				.srednjiMeni{
+					display: flex;
+					flex-direction: column; /* 👈 jedan ispod drugog */
+					align-items: center;
+				}
+
+				aside{
+					width: 90%;
+					height: auto;
+					margin: 0 auto 20px auto; /* 👈 centrirano */
+				}
+				
+				.heading{
+					font-size: 5rem;
+				}
+				
+				.filters{
+					display: block;
+					width: auto;
+				}
+				
+				.filters details{
+				
+					width: 1000px;          /* 🔑 KLJUČ */
+					flex-shrink: 0;        /* 🔒 zabrana skupljanja/širenja */
+					padding-left: 15px;	
+					margin: 20px auto;
+					border: none;
+				}
+				
+				.filters label{
+						
+					font-size: 2rem;
+				}
+				
+				.filterDugme{
+					height: 200px;
+					width: 400px;
+					font-size: 4rem;
+				}
+				
+				.ikoniceSortiranje{
+					font-size: 4rem;
+					
+				}
+				
+				
+				
+				 .viewBox{
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: center;      /* horizontalno centriranje */
+					align-content: flex-start;    /* 🔑 zbijanje redova ka vrhu */
+					row-gap: 10px;                /* vertikalni razmak između redova */
+					column-gap: 20px;             /* horizontalni razmak između proizvoda */
+					height: auto;
+					width: 800px;
+				}
+
+				 .product{
+					width: 42%;          /* 👈 uži */
+					height: auto;   
+					float: none;         /* ❌ gasimo float */
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+				}
+				
+				
+				
+				.product p{
+					font-size: 2rem;
+					line-height: 1.2;
+					word-break: break-word;
+				}
+				
+				.product img{
+					
+					width: 300px;
+					height: 500px;
+				}
+				
+				.product button{
+					padding: 20px;
+					font-size: 1rem;
+				}
+				
+				.ikoniceSortiranjeBox{
+					
+					padding-left: 20px;
+				}
+				
+				
+				
+				
+				.paginacija {
+					display: flex;              /* da dugmad budu u redu */
+					justify-content: center;    /* centrirano */
+					align-items: center;
+					margin-top: 30px;
+					gap: 10px;                  /* razmak između dugmadi */
+					margin-left: 80px;
+				}
+
+				.paginacija button {
+					font-size: 1.8rem;          /* veći tekst */
+					padding: 12px 20px;         /* veći klikabilni prostor */
+					border-radius: 8px;         /* zaobljeni uglovi */
+					border: 1px solid gray;     
+					background-color: #faf8f8;
+					cursor: pointer;
+					transition: all 0.2s;       /* za hover efekat */
+				}
+
+				.paginacija button:hover {
+					background-color: black;
+					color: white;
+				}
+
+				/* posebno za Back i Next */
+				.dugmeBack, .dugmeNext {
+					font-weight: bold;
+					padding: 12px 25px;
+					margin: 0;                  /* gap iz .paginacija već definiše razmak */
+				}
+				
+				.reklama h1{
+					margin: 75px auto;
+					font-size: 2.5rem
+				}
+				
+				.reklama input{
+					
+					font-size: 2rem;
+				}
+				
+				.reklama button{
+					
+					font-size: 2rem;
+				}
+			}
+			
+			@media screen and (max-width: 425px){
+				body{
+					
+					display: flex;
+					flex-direction: column; /* 👈 jedan ispod drugog */
+					align-items: center;
+					margin: 0 auto;
+					padding: 0;
+					
+				}
+				
+				
+				aside{
+					width: 90%;
+					height: auto;
+					margin: 0 auto 20px auto; /* 👈 centrirano */
+					font-size: 4rem;
+					
+				}
+				
+				
+				
+				.checkmark {
+					width: 60px;   /* veći checkbox za mobilni */
+					height: 60px;
+				}
+				
+				.checkbox-container p {
+					display: inline-block;  /* da bude u redu sa checkmark */
+					margin: 0;              /* uklanja default margin */
+					padding-left: 5px;      /* razmak od kvadratića */
+					font-size: 3rem;        /* po potrebi prilagodi */
+				}
+				
+			
+				
+				
+				.filters li {
+				  padding-top: 30px;
+				}
+				
+				.productViewBox{
+					width: 1000px;
+				}
+				
+				.ikoniceSortiranjeBox{
+					
+					margin-left: 100px;
+					padding-left: 0px;
+					display: flex;
+					justify-content: space-between;
+				}
+				
+				.levaInformacija{
+					font-size: 3rem;
+					margin-left: 0px;
+					padding-left: 0px;
+				}
+				
+				.desnaInformacija{
+					font-size: 3rem;
+					padding-left: 100px;
+				}
+				
+				.viewBox{
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: center;      /* horizontalno centriranje */
+					align-content: flex-start;    /* 🔑 zbijanje redova ka vrhu */
+					row-gap: 10px;                /* vertikalni razmak između redova */
+					column-gap: 20px;             /* horizontalni razmak između proizvoda */
+					
+				}
+				
+				.product{
+					width: 90%;          /* 👈 uži */
+					min-height: 1560px;   /* 👈 veća visina */
+					float: none;         /* ❌ gasimo float */
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					
+				}
+				
+				.product p{
+					font-size: 4rem;
+				}
+				
+				.product img{
+					width: 100%;
+					height:auto;
+				}
+				
+				.product button{
+					padding: 40px;
+					width: 300px;
+					font-size: 3rem;
+				}
+				
+				.paginacija{
+					margin-left: 0px;
+					margin-right: 30px;
+					padding-left: 0px;
+					
+				}
+				
+				.paginacija button {
+					font-size: 3rem;          /* veći tekst */
+					
+				}
+				
+				.reklama{
+					width: 100px;
+					height: 350px;
+					margin-top: 100px;
+					background-color: #e4d7cd;
+					display: block;
+					width: 1300px;
+					display: flex;
+					
+					
+				}
+				
+				.emailAndSubscribe button{
+					height: 100px;
+					width: 630px;
+				}
+				
+				.reklama h1{
+					margin-top: 75px;
+					margin-left: 30px;
+					font-size: 3rem
+				}
+				
+				.reklama input{
+					padding: 20px;
+					font-size: 3rem;
+				}
+				
+				.reklama button{
+					padding: 20px;
+					font-size: 3rem;
+				}
+			}
+

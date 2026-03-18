@@ -1,0 +1,131 @@
+
+			
+			
+			.loginForm{
+				display: flex;
+				flex-direction: column;   /* elementi idu jedan ispod drugog */
+				justify-content: center;  /* vertikalno centriranje */
+				align-items: center;      /* horizontalno centriranje */
+				padding: 10px;
+				width: 500px;
+				height: 300px;
+				border: 1px solid gray;
+				border-radius: 10px;
+				margin: 0 auto;
+				gap: 20px;                /* razmak između sekcija */
+			}
+			.emailPasswordBox{
+				display: flex;
+				flex-direction: column; /* label iznad inputa */
+				width: 80%;
+			}
+			
+			.emailButton{
+				padding: 10px;
+				border-radius: 10px;
+				margin-bottom: 10px;
+			}
+			
+			.passwordButton{
+				padding: 10px;
+				border-radius: 10px;
+			}
+			
+			.rememberMeForgotPasswordBox{
+				width: 80%;
+				display: flex;
+				justify-content: space-between;
+			}
+			
+			/* kocka checkbox */
+
+			/* sakrij pravi checkbox */
+			.checkbox-container input{
+				display: none;
+			}
+
+			.checkmark{
+				width: 18px;
+				height: 18px;
+				border: 2px solid black;
+				display: inline-block;
+				
+				padding: 3px;                 /* 👈 beli prostor */
+				box-sizing: border-box;
+				background-clip: content-box; /* 👈 crna boja samo u sredini */
+			}
+
+			/* kad je čekirano → crno */
+			.checkbox-container input:checked + .checkmark{
+				background-color: black;
+			}
+
+			.checkbox-container{
+				padding: 10px 10px 2px 0px;
+			}
+
+			/*END kocka checkbox*/
+			
+			.loginButtonForm{
+				width: 80%;
+			}
+			
+			.loginButton{
+				width: 100%;
+				padding: 10px;
+				border-radius: 10px;
+				color: white;
+				background-color: black;
+			}
+			
+			.forgotPasswordLink{
+				color: gray;
+			}
+			
+			.createAnAccountLink{
+				color: black;
+			}
+			
+			
+			@media screen and (max-width: 425px){
+				
+			
+				
+				.loginForm{
+					background-color: #faf8f8;
+					height: auto;
+					width: 1000px;
+				}
+				
+				.loginForm label{
+					
+					font-size: 2.5rem;
+				}
+				
+				.loginForm input{
+					
+					font-size: 2.5rem;
+				}
+				
+				.checkbox-container .checkmark{
+					width: 26px;      /* ⬅ veći checkbox */
+					height: 26px;
+					border: 2px solid black;
+					margin-right: 10px; /* razmak od teksta */
+				}
+				
+				.loginForm button{
+					padding: 20px;
+					font-size: 2.5rem;
+				}
+				
+				.forgotPasswordLink{
+					font-size: 2rem;
+				}
+				
+				.createAccountForm{
+					font-size: 2rem;
+				}
+			
+			}
+			

@@ -1,0 +1,391 @@
+/*MAIN*/
+			
+			
+			.sectionInformation{
+				display: flex;
+				justify-content: space-around;
+				flex-direction: row;
+			}
+			
+			.leviDeo{
+				width: 400px;
+				height: 600px;
+				background-color: #faf8f8;
+				padding-left: 100px
+			}
+			
+			
+			
+			
+			.hedingShippingInformation,
+			.headingReviewCart {
+				margin-top: 10px; /* poravnaj vrh naslova sa vrhom sekcije */
+				margin-bottom: 10px; /* opcionalno, razmak do forme */
+			}
+			
+			.formaInformacijaProizvoda{
+				border: 1px solid gray;
+				background-color: #faf8f8;
+				padding: 10px;
+				border-radius: 5px;
+			}
+			
+			.prozvodJedan {
+				display: flex; /* horizontalno raspoređuje decu */
+				gap: 15px; /* razmak između slike i desnog dela */
+				align-items: flex-start; /* poravnava decu po vrhu */
+			}
+			
+			.prozvodDva {
+				display: flex; /* horizontalno raspoređuje decu */
+				gap: 15px; /* razmak između slike i desnog dela */
+				align-items: flex-start; /* poravnava decu po vrhu */
+			}
+			
+			.prozvodTri {
+				display: flex; /* horizontalno raspoređuje decu */
+				gap: 15px; /* razmak između slike i desnog dela */
+				align-items: flex-start; /* poravnava decu po vrhu */
+			}
+			
+			.prozvodCetri {
+				display: flex; /* horizontalno raspoređuje decu */
+				gap: 15px; /* razmak između slike i desnog dela */
+				align-items: flex-start; /* poravnava decu po vrhu */
+			}
+				
+			.slikaProizvodaBox {
+				flex-shrink: 0; /* slika se ne smanjuje */
+			}
+			
+			
+
+			.imeProizvodaCenaBox {
+				display: flex;
+				justify-content: space-between;
+				width: 250px;
+				margin: 0 0 5px 0;
+			}
+			
+			.proizvodInformacijeBox * {
+				margin-top: 0;
+				padding: 10;
+				box-sizing: border-box; /* već koristiš, samo da bude sigurno */
+			}
+
+			/* dodatno: ako želiš da količina uvek bude na dnu */
+			.kolicinaProizvodaBox {
+			}
+			
+			.prozvodJedan img{
+				width: 100px;
+				height: 100px;
+			}
+			
+			
+			.prozvodDva img{
+				width: 100px;
+				height: 100px;
+			}
+			
+			.prozvodTri img{
+				width: 100px;
+				height: 100px;
+			}
+			
+			.prozvodCetri img{
+				width: 100px;
+				height: 100px;
+			}
+			
+			/*Dugme za menjanje kolicine proizvoda*/
+			.quantity-container {
+				display: flex;
+				align-items: center;
+				gap: 0px; /* razmak između dugmadi i broja */
+				width: max-content;
+				border: 1px solid gray;
+				border-radius: 5px;
+			}
+
+			.quantity-container input[type="number"] {
+				width: 40px; /* širina broja */
+				text-align: center;
+				border-radius: 5px;
+				border: 1px solid #faf8f8;
+				background-color: #faf8f8;
+				-moz-appearance: textfield; /* uklanja strelice u Firefoxu */
+			}
+
+			.quantity-container input::-webkit-outer-spin-button,
+			.quantity-container input::-webkit-inner-spin-button {
+				-webkit-appearance: none; /* uklanja strelice u Chrome/Safari */
+				margin: 0;
+			}
+
+			.quantity-container button {
+				cursor: pointer;
+				border: 1px solid #faf8f8;
+				border-radius: 5px;
+				background-color: #faf8f8;
+				user-select: none;
+				
+			}
+
+			.quantity-container button:hover {
+				background-color: #faf8f8;
+			}
+			
+			.ukupnoCenaBox{
+				display: flex;
+				justify-content: space-between;
+				padding: 10px;
+			}
+			
+			
+			.desniDeo{
+				width: 400px;
+				height: 500px;
+				background-color: #faf8f8;
+			}
+			
+			.deoSummary{
+				min-height: 100px;
+				box-sizing: border-box;
+				
+			}
+			.orderSummary{
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			.subtotal{
+				display: flex;
+				justify-content: space-between;
+				margin:0px;
+				height: 30px;
+			}
+			
+			.discount{
+				display: flex;
+				justify-content: space-between;
+				margin:0px;
+				height: 30px;
+			}
+			
+			.total{
+				display: flex;
+				justify-content: space-between;
+				
+			}
+			
+			.totalHeading{
+				margin:0px;
+				padding: 0px;
+			}
+			
+			.totalCena{
+				margin:0px;
+				padding-top: 5px;
+			}
+			
+			.deoCodeDugme{
+				display: flex;
+				justify-content: space-between;
+				padding-top: 20px;
+				width: 100%;
+				margin: 0px;
+			}
+			
+			.promoCodeUnos{
+				width: 45%;
+				padding: 10px;
+				border-radius: 10px;
+			}
+			
+			.applyDugme{
+				width: 45%;
+				padding: 10px;
+				border-radius: 10px;
+				background-color: black;
+				color: white;
+			}
+			
+@media screen and (max-width: 425px){
+	
+	
+	.sectionMain,
+	.shippingInformation,
+	.paymentInformation,
+	.desniDeo
+	.sectionInformation{
+		height: auto;        /* ✅ KLJUČNO */
+	}
+	
+	
+	
+	
+	.sectionInformation{
+		display: flex;
+		flex-direction: column-reverse;
+		/*align-items: center;*/   /* ✅ horizontalno centriranje */
+		/*justify-content: center;*/
+		
+	}
+	
+	
+				
+	
+	
+	.leviDeo,
+	.desniDeo{
+		width: 100%;
+		height: auto;
+		max-width: 960px;   /* idealno za mobile */
+		margin: 0 auto;     /* ✅ centriranje */
+	}
+	
+	.leviDeo{
+		margin-bottom: 350px;
+	}
+	
+	.shippingInformation,
+	.paymentInformation{
+		width: 100%;
+		
+		margin-left: 0;     /* ❗ KLJUČNO */
+	}
+	
+	.shippingInformation{
+	}
+	
+	.formaInformacijaProizvoda{
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.headingReviewCart{
+		font-size: 3rem	
+	}
+	
+	.slikaProizvodaBox img{
+		width: 400px;
+		height: 500px;
+	}
+	
+	.proizvodInformacijeBox{
+		margin: 10px auto;
+		width: 100%;
+	}
+	
+	
+	
+	.prozvodJedan{
+		border-bottom: 1px solid gray;
+	}
+	
+	.prozvodDva{
+		border-bottom: 1px solid gray;
+	}
+	
+	.prozvodTri{
+		border-bottom: 1px solid gray;
+	}
+	
+	.prozvodCetri{
+		border-bottom: 1px solid gray;
+	}
+	
+	.imeProizvodaCenaBox{
+		font-size: 3rem;
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		height: 300px;
+	}
+	
+	.velicinaProizvodaBox p{
+		font-size: 3rem;
+	}
+	
+	.quantity-container input[type="number"] {
+		width: 240px; /* širina broja */
+		height:50px;
+		font-size: 3rem;
+	}
+	
+	.quantity-container button {
+		font-size: 3rem;
+		
+	}
+	
+	.leviDeo{
+		margin-top: 100px;
+	}
+	
+	.hedingShippingInformation{
+		font-size: 3rem;
+	}
+	
+	.formShippingInformation label{
+		font-size: 2.5rem;
+	}
+	
+	.boxFirstLastName{
+		display: block;
+		width: 100%;
+	}
+	
+	.formFirstname{
+		width: 100%;
+	}
+	
+	.formLastname{
+		width: 100%;
+	}
+	
+	.formShippingInformation input{
+		padding: 20px;
+		width: 100%;
+		font-size: 2rem;
+	}
+	
+	.formShippingInformation select{
+		padding: 20px;
+	}
+	
+	.checkbox{
+		padding: 20px;
+	}
+	
+	.checkmark{
+		padding: 20px;
+	}
+	
+	.paymentInformation {
+		margin-top: 100px;
+	}
+	
+	.hedingPaymentInformation{
+		font-size: 3rem;
+	}
+	
+	.formPaymentInformation button{
+		font-size: 3rem;
+	}
+	
+	.formPaymentInformation label{
+		font-size: 2.5rem;
+	}
+	
+	.formPaymentInformation input{
+		padding: 20px;
+		width: 100%;
+		font-size: 2rem;
+	}
+	
+	.formPaymentInformation select{
+		padding: 20px;
+		font-size: 2rem;
+	}
+}

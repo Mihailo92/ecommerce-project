@@ -1,0 +1,45 @@
+.container{
+	max-width: 1300px;
+	width: 100%;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+
+main{
+	background-color: #faf8f8;
+	width: 1300px;
+	height: auto;
+	
+	margin: 0 auto;   /* ✅ CENTRIRANJE */
+}
+
+
+.breadcrumbs{
+	padding: 50px 100px 20px 200px;
+	display: flex;
+	align-items: center;
+}
+
+.crumb{
+	padding: 10px;
+}
+
+.heading{
+	text-align: center;
+}
+
+
+
+@media screen and (max-width: 425px){
+	
+	
+	
+				
+	.breadcrumbs p{
+		font-size: 4rem;
+	}
+	
+	.heading{
+		font-size: 5rem;
+	}
+}

@@ -1,0 +1,252 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+/*HEADER*/
+header{
+	background-color: #fbf1e9;
+	display: flex;
+	
+	width: 1300px;
+	
+	margin: 0 auto;   /* ✅ CENTRIRANJE */
+}
+
+.sectionHeader{
+	display: flex;
+	align-items: center;   /* ✅ vertical centering */
+	justify-content: space-between;
+	width: 100%; /*flex skuplja sirinu pa je moramo pocati*/
+
+	
+	max-width: 1200px;     /* širina layouta */
+	margin: 0 auto;       /* ✅ horizontalno centriranje */
+	
+}
+
+.logo{
+	display: inline-block;
+}
+
+.logo img{
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+}
+
+.navigation{
+	display: inline-block;
+}
+
+.navigation li{
+	display: inline-block;
+}
+
+.navigation a{ 
+	text-decoration-line: none;
+	color: black;
+	padding-left: 30px;
+}
+
+.userPicture{
+	width: 30px;
+	height: 30px;
+	padding-left: 30px;
+}
+
+.cartPicture{
+	padding-left: 30px;
+	
+}
+
+.cart img {
+		width: 30px;
+		height: 30px;
+	}
+
+
+.search input{
+	border-radius: 25px;
+	width: 350px;
+	border: 2px solid #ccc;
+	padding: 10px;
+}
+
+.leftLogoNavigation{
+	display: flex;
+	align-items: center;
+}
+
+.rightCartUser{
+	display: flex;
+	align-items: center;
+}
+
+/*END HEADER*/
+
+		/*menu hamburger*/
+
+		.menu-hamburger{
+			
+			display: none;
+		}
+		
+		#menu-toggle {
+            display: none;
+        }
+
+        .menu-icon {
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+			
+			display: none;
+        }
+
+        .menu-icon span {
+            background: white;
+            height: 3px;
+            width: 25px;
+            margin: 4px 0px;
+        }
+        .menu-hamburger {
+            position: absolute;
+            list-style: none;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: #222;
+            display: flex;
+            flex-direction: column;
+            max-height: 0;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+        .menu-hamburger li {
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        .menu-hamburger a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+		
+		
+
+        #menu-toggle:checked + .menu-icon 
+            + .menu {
+            max-height: 300px;
+        }
+
+
+
+/* Hamburger menu za male ekrane */
+@media screen and (max-width: 425px) {
+    /* Sakrij desktop meni */
+	
+	
+	
+	
+	
+	.leftLogoNavigation{
+		justify-content: space-between;
+		width: 100%;
+	}
+	
+    .navigation .menu {
+        display: none;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+	
+	.menu-icon span{
+		
+		background-color: black;
+	}
+
+    /* Meni ispod sectionHeader */
+    .menu-hamburger {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        background-color:#fbf1e9;
+        position: absolute;       /* apsolutno u odnosu na parent sa relative */
+        top: 100%;               /* odmah ispod parenta */
+        left: 0;
+        transition: max-height 0.3s ease;
+        z-index: 999;
+    }
+
+    /* Važno: sectionHeader treba da bude relative */
+    .sectionHeader {
+        position: relative;
+		height: 300px;
+		display: block;
+    }
+
+    .menu-hamburger li {
+        text-align: center;
+        padding: 45px 0;
+        border-top: 1px solid #444;
+    }
+
+    .menu-hamburger a {
+        color: black;
+        text-decoration: none;
+        font-size: 3rem;
+    }
+
+    /* Checkbox kontrola */
+    #menu-toggle:checked ~ .menu-hamburger {
+        max-height: 900px;
+		margin: 0px auto;
+		max-width: 1300px;
+    }
+	
+	.logo img{
+		
+		width: 300px;
+		height: 300px;
+	}
+	
+	.menu-icon span {
+		height: 40px;
+		width: 200px;
+		margin: 4px 0px;
+		border-radius: 10px;
+		background-color: gray;
+	}
+	
+	.search{
+	   padding-left: 25px
+	}
+	.search input {
+		display: none;
+	}
+	
+	.cart img {
+		height: 200px;
+		width: 200px;
+		display: none;
+	}
+	
+	.userPicture {
+		display: none;
+		
+	}
+	
+	.search input::placeholder {
+		color: #555;
+		opacity: 1;
+	}
+	
+	
+}

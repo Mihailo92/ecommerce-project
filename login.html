@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Login</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/header.css">
+		<link rel="stylesheet" href="css/footer.css">
+		<link rel="stylesheet" href="css/login.css">
+		<link rel="stylesheet" href="css/global.css">
+		
+		 <script src="js/login.js" defer></script>
+		 <script src="js/main.js" defer></script>
+		 
+		 
+	</head>
+	<body>
+		<div class="container">
+		<header>
+			<div class="sectionHeader">
+			
+				<div class="leftLogoNavigation">
+				
+				 
+					<div class="logo">
+						<img alt="logo" src="images/logo.png">
+					</div>
+				
+					<nav class="navigation">
+
+						<input type="checkbox" id="menu-toggle" />
+
+						<label for="menu-toggle" class="menu-icon">
+							<span></span>
+							<span></span>
+							<span></span>
+						</label>
+
+						<ul class="menu">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="cart.html">Checkout</a></li>
+							<li><a href="login.html">Login</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+						
+						<ul class="menu-hamburger">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="cart.html">Checkout</a></li>
+							<li><a href="login.html">Login</a></li>
+							<li><a href="#">Contact</a></li>
+							<li><a href="#">Cart</a></li>
+							<li><a href="#">Account</a></li>
+						</ul>
+
+					</nav>
+					
+				</div>
+				
+				<div class="rightCartUser">
+					
+					<div class="search">
+						<input type="text" placeholder="Search...">
+					</div>
+				
+					<div onclick="prikaziIznos()" class="cart">
+						<img alt="cart" class="cartPicture" src="images/shopping-cart.png"><!--🛒 -->
+					</div>
+					
+					<div class="user">
+						<img alt="user" class="userPicture" src="images/user.png" >
+					</div>
+						
+				</div>
+			</div>
+			
+		</header>
+		
+		
+		
+		<main>
+		
+			<div class="sectionMain">
+				<div class="breadcrumbs">
+					<span class="crumb"><p>Home</p></span>
+					<span class="crumb-sep"><p>›</p></span>
+					<span class="crumb"><p>Login</p></span>
+				 </div>
+				 
+				 <h1 class="heading">Login</h1>
+				 
+				 <div class="loginForm">
+					
+					<div class="emailPasswordBox">
+						<label>Email</label>
+						<input class="emailButton" type="text">
+						<label>Password</label>
+						<input class="passwordButton" type="password">
+					</div>	
+					
+					<div class="rememberMeForgotPasswordBox">
+						<div class="rememberMeChb">
+								<label class="checkbox-container">
+										<input type="checkbox">
+										<span class="checkmark"></span>
+										Remember me
+								</label>
+						</div>
+						<a href="#" class="forgotPasswordLink">Forgot password?</a>
+					</div>
+					
+					<div class="loginButtonForm">
+						<button type="submit" class="loginButton">Login</button>
+					</div>
+					
+					<div class="createAccountForm">
+						Or <a href="#" class="createAnAccountLink">Create an Account</a>
+					</div>
+					
+				 </div>
+				 
+			</div>
+			
+			
+		
+	
+		</main>
+		
+		
+		
+		<footer>
+			<div class="sekcijaFooter">
+			
+				<div class="sekcijaShop">
+					<h2>SHOP</h2>
+					
+					<ul>
+						<li>Dressses</li>
+						<li>Jackets</li>
+						<li>Skirts</li>
+						<li>Shoes & Bags</li>
+						<li>Gift Cards</li>
+						<li>Sales & Offers</li>
+					</ul>
+				</div>
+				
+				<div class="sekcijaInformation">
+					<h2>INFORMATION</h2>
+					
+					<ul>
+						<li>About</li>
+						<li>Terms and Conditions</li>
+						<li>Privacy Policy</li>
+						<li>Delivery and Return</li>
+						
+					</ul>
+				</div>
+
+				<div class="sekcijaCustomerSupport">
+				
+					<h2>CUSTOMER SUPPORT</h2>
+					
+					<ul>
+						<li>Contact</li>
+						<li>Help</li>
+						<li>FAQ</li>
+						
+					</ul>
+				</div>	
+			</div>
+			
+			
+			<div class="footer-bottom">
+			
+				<div class="sekcijaDeveloperInfo">
+					<p>Designed and developed by: ITAcademy</p>			
+				</div>
+				
+				<div class="sekcijaSocialneMrezeIcons">
+				
+					<img alt="facebook" src="images/facebook.png">
+					
+					<img alt="instagram" src="images/instagram.png">
+					
+					<img alt="titok" src="images/tiktok2.png">
+					
+				</div>
+			</div>
+		</footer>
+		</div>
+	</body>
+</html>
